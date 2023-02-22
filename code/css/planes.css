@@ -1,0 +1,144 @@
+/********** General ************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #b535f6;
+}
+
+body {
+    font-family: "m";
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    background-color: var(--color-gray);
+}
+
+/*********** Header *************/
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 30px;
+    background-color: #0c011d;
+    z-index: 2;
+    top: 0;
+}
+
+header .enlaces a {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+header .purple {
+    background-color: var(--purple);
+    padding: 10px 12px;
+    border-radius: 20px;
+}
+
+header .logo {
+    width: 160px;
+}
+
+/************ Content ***************/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-image: url("../../rg/img/bg-gradient.jpg");
+    width: 100%;
+    background-size: cover;
+    margin-top: 60px;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.content .cont-card {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.content .card {
+    background: rgba(255, 255, 255, .1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 400px;
+}
+
+.content .card ul {
+    margin: 50px 0;
+}
+
+.content .card li {
+    margin: 15px 0;
+    color: rgb(226, 223, 223);
+}
+
+.content p {
+    margin-top: 10px;
+}
+
+.content a {
+    padding: 15px 60px;
+    background-color: #b535f6;
+    border-radius: 30px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.content a:hover {
+    background-color: #7618a5;
+}
+
+/********** footer ***********/
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(7, 2, 82);
+    padding: 30px 0;
+}
+
+footer a {
+    color: #a872ff;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    gap: 30px;
+}
