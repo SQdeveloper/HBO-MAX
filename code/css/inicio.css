@@ -238,6 +238,10 @@ header .logo {
     background-color: white;
 }
 
+.estreno > h2 {
+    padding: 0 20px;
+}
+
 .estreno .cont-buttons {
     display: flex;
     align-items: center;
@@ -292,6 +296,7 @@ header .logo {
     background: linear-gradient(transparent 50%, #030328 90%), url("../../rg/img/perry_mason.avif");
     background-size: cover;
     position: relative;
+    background-position: center;
 }
 
 .episodios .box-grid a {
@@ -400,6 +405,7 @@ header .logo {
 .preguntas h2 {
     font-size: 30px;
     color: white;
+    padding: 0 10px;
 }
 
 .preguntas > div {
@@ -456,6 +462,7 @@ footer {
     background-color: #030328;
     color: #8a84ff;
     text-align: center;
+    padding: 0 20px;
     padding-bottom: 25px;
 }
 
@@ -480,4 +487,153 @@ footer ul img {
 
 footer ul:last-child {
     margin-top: 20px;
+}
+
+/*********** Querys *************/
+@media (max-width: 1000px){
+    /************** Planes ***************/
+    .planes .cont-cards {
+        flex-direction: column;
+    }
+
+    .planes .cont-cards .card {
+        border: 2px solid #b535f6;
+        background: rgba(255, 255, 255, .1);
+    }
+
+    /*********** Banner **************/
+    .banner h5 {
+        margin-top: 10px;
+    }
+
+    /********** Episodios **************/
+    .episodios .box-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /********** Descubre **************/
+    .descubre .box-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 840px){
+    /************ Bg **************/
+    .bg img {
+        width: 280px;
+    }
+
+    /********** Episodios **************/
+    .episodios .box-grid div {
+        height: 350px;
+    }
+
+}
+
+@media (max-width: 670px) {
+    /******** Bg *********/
+    .bg img {
+        width: 220px;
+    }
+
+    .bg .cont-text div {
+        font-size: 18px;
+    }
+
+    /************** Planes ***************/
+    .planes .cont-cards .card {
+        padding: 20px 60px;
+    }
+
+    .planes .box ul {
+        justify-content: center;
+    }
+
+    /************ Estrenos ************/
+    .estreno .slider .box {
+        height: 320px;
+    }
+
+    /*********** Episodios *************/
+    .episodios {
+        padding-top: 60px;
+    }
+
+    .episodios .box-grid div {
+        height: 290px;
+    }
+
+    /*********** Banner ***********/
+    .banner .cont-div p {
+        font-size: 15px;
+    }
+
+    /******** preguntas ********/
+    .preguntas {
+        padding-bottom: 5px;
+    }
+    .preguntas h2 {
+        font-size: 25px;
+    }
+
+    .preguntas .top h2 {
+        font-size: 20px;
+    }
+
+    /********* Footer *********/
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /******* Header ********/
+    header {
+        padding: 0 10px;
+    }
+
+    header .logo {
+        width: 140px;
+    }
+
+    header .enlaces a {
+        font-size: 10px;
+        margin-left: 8px;
+    }
+
+    /******* Episodios *******/
+    .episodios .box-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /********* Banner *********/
+    .banner .cont-div {
+        width: 92%;
+        flex-wrap: wrap;
+    }
+
+    .banner img {
+        width: 92%;
+    }
+
+    .banner .cont-div p {
+        font-size: 20px;
+    }
+
+    /******* Descubre ********/
+    .descubre {
+        padding: 5px;
+    }
+    .descubre .box-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+    }
+
+    .descubre .box-grid {
+        width: 90%;
+    }
+
+    /******** Preguntas ************/
+    .preguntas > div {
+        width: 90%;
+    }
 }

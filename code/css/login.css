@@ -138,7 +138,7 @@ footer {
     justify-content: center;
     width: 100%;
     background-color: rgb(7, 2, 82);
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 footer a {
@@ -153,4 +153,43 @@ footer a:hover {
 footer ul {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/********** Querys ***********/
+@media (max-width: 530px) {
+    /********* Formulario **********/
+    form {
+        width: 100%;
+        padding: 0 20px;
+    }
+    form input {
+        width: 100%;
+    }
+    form button {
+        padding: 15px 60px;
+    }
+    .formulario > a {
+        padding: 15px 40px;
+    }
+
+    /********** Footer ***********/
+    footer ul a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /*********** formulario ***********/
+    .formulario {
+        height: calc(100vh - 60px);
+    }
+
+    /*********** Footer ************/
+    footer {
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+    }
 }

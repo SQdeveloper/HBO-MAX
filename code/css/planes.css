@@ -73,13 +73,16 @@ header .logo {
     background-size: cover;
     margin-top: 60px;
     gap: 20px;
-    padding: 50px 0;
+    padding: 50px 40px;
+    text-align: center;
 }
 
 .content .cont-card {
     display: flex;
     gap: 40px;
     margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content .card {
@@ -126,7 +129,7 @@ footer {
     justify-content: center;
     width: 100%;
     background-color: rgb(7, 2, 82);
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 footer a {
@@ -141,4 +144,29 @@ footer a:hover {
 footer ul {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/********** Querys ***********/
+@media (max-width: 1000px) {
+    /******** content ********/
+    .content .cont-card {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /******** content ********/
+    .content {
+        padding: 40px 20px;
+    }
+    .content .cont-card {
+        width: 100%;
+    }
+
+    /*********** Footer ************/
+    footer {
+        padding: 20px;
+    }
 }
