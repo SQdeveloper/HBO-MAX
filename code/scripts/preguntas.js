@@ -1,4 +1,4 @@
-const buttonPlus = document.querySelectorAll(".preguntas .top button");
+const buttonPlus = document.querySelectorAll(".preguntas .top");
 const parrafo    = document.querySelectorAll(".preguntas p");
 const imgs        = document.querySelectorAll(".preguntas .top img");
 let flag = [true, true, true, true, true];
