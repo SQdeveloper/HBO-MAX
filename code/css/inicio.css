@@ -63,15 +63,41 @@ header .logo {
 
 /*************** bg *****************/
 .bg {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(black 60%, #0c011d);
+    background: linear-gradient(black 60%, #0c011d);    
+}
+
+.bg .cont-video {
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent 80%, #020228);
+    z-index: 10
+}
+
+.bg .cont-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .bg .cont-text {
+    position: absolute;
     text-align: center;
     color: white;
     display: flex;
@@ -110,6 +136,9 @@ header .logo {
     text-align: center;
     background-color: #0c011d;
     color: white;
+    padding-top: 4rem;
+    background-image: url("../../rg/img/plans_background.png");
+    background-size: 100% 100%;
 }
 
 .planes .slider {
@@ -184,6 +213,12 @@ header .logo {
     border: 1.5px solid rgba(209, 213, 219, 0.3);
     border-radius: 20px;
     padding: 40px 60px;
+    transform: scale(.88);
+}
+
+.planes .cont-cards .card:nth-child(2) {
+    transform: scale(1);
+    border: 3px solid #b535f6
 }
 
 .planes .card span {
@@ -207,7 +242,7 @@ header .logo {
     text-align: center;
     padding-top: 40px;
     color: white;
-    background: linear-gradient(#0c011d 50%, #2a023f 90%);
+    background: linear-gradient(#030228 50%, #2a023f 90%);
 }
 
 .estreno .slider {
@@ -586,6 +621,7 @@ footer ul:last-child {
     .planes .cont-cards .card {
         border: 2px solid #b535f6;
         background: rgba(255, 255, 255, .1);
+        transform: none;
     }
 
     /*********** Banner **************/
